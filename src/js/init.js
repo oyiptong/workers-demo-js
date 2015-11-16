@@ -24,5 +24,19 @@
       cpu.append(new Date().getTime(), diff);
       last = now;
     }, delay);
+
+    /*
+    // example of how to create a worker
+    var worker = new Worker("./js/itunesWorker.js");
+    worker.addEventListener('message', function(e) {
+      console.log('Worker said: ', e.data);
+    }, false);
+
+    // example of how to communicate with a worker
+    worker.postMessage({
+      command: "scrape",
+      url: "https://itunes.apple.com/search?term=offspring&entity=album"
+    });
+    */
   });
 })(window);
