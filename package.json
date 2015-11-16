@@ -1,0 +1,19 @@
+{
+  "url": "https://github.com/oyiptong/workers-demo-js/issues",
+  "license": "MPL-2.0",
+  "contributors": [
+    {
+      "name": "Olivier Yiptong"
+    }
+  ],
+  "repository": "https://github.com/oyiptong/workers-demo-js",
+  "devDependencies": {
+    "jscs": "^2.1.0",
+    "jshint": "^2.8.0"
+  },
+  "scripts": {
+    "jshint": "jshint src/js",
+    "jscs": "jscs --esnext src",
+    "jscs:fix": "jscs --esnext --fix src/js"
+  }
+}
