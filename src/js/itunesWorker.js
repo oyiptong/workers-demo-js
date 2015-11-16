@@ -17,12 +17,12 @@ var ITunes = {
   },
 
   fetchAlbums(pattern) {
-    let url = `${CORS_ANYWHERE_URL}${ITUNES_URL}entity=albums&term=${pattern}`;
+    var url = `${CORS_ANYWHERE_URL}${ITUNES_URL}entity=album&term=${pattern}`;
     return this.fetchJSON(url);
   },
 
   fetchArtists(pattern) {
-    let url = `${CORS_ANYWHERE_URL}${ITUNES_URL}entity=allArtists&term=${pattern}`;
+    var url = `${CORS_ANYWHERE_URL}${ITUNES_URL}entity=allArtist&term=${pattern}`;
     return this.fetchJSON(url);
   }
 };
